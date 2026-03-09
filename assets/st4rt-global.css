@@ -1,0 +1,72 @@
+:root {
+  /* Colors */
+  --st4rt-color-bg: #0B0D10;
+  --st4rt-color-text-primary: #F2F2F2;
+  --st4rt-color-text-secondary: #CFD6DD;
+  --st4rt-color-accent-primary: #D8F213;
+  --st4rt-color-border: #000000;
+  --st4rt-color-overlay-dark-35: rgba(0, 0, 0, 0.35);
+  --st4rt-color-overlay-dark-55: rgba(0, 0, 0, 0.55);
+
+  /* Spacing scale */
+  --st4rt-space-8: 8px;
+  --st4rt-space-12: 12px;
+  --st4rt-space-16: 16px;
+  --st4rt-space-24: 24px;
+  --st4rt-space-32: 32px;
+  --st4rt-space-40: 40px;
+  --st4rt-space-56: 56px;
+
+  /* Radius */
+  --st4rt-radius-0: 0;
+  --st4rt-radius-sm: 8px;
+  --st4rt-radius-md: 12px;
+  --st4rt-radius-lg: 18px;
+
+  /* Motion */
+  --st4rt-motion-duration-fast: 150ms;
+  --st4rt-motion-duration-base: 220ms;
+  --st4rt-motion-duration-slow: 320ms;
+  --st4rt-motion-ease-standard: ease;
+  --st4rt-motion-translate-hover-y: -1px;
+
+  /* Typography tokens (base scale) */
+  --st4rt-type-display-l-size: 56px;
+  --st4rt-type-display-m-size: 44px;
+  --st4rt-type-body-m-size: 16px;
+  --st4rt-type-body-s-size: 14px;
+  --st4rt-type-kicker-size: 12px;
+
+  --st4rt-type-display-weight: 800;
+  --st4rt-type-body-weight: 400;
+  --st4rt-type-kicker-weight: 700;
+
+  --st4rt-type-display-lh-tight: 1.05;
+  --st4rt-type-body-lh-base: 1.45;
+  --st4rt-type-kicker-lh: 1.2;
+
+  --st4rt-type-display-ls-tight: -0.02em;
+  --st4rt-type-body-ls: 0;
+  --st4rt-type-kicker-ls: 0.12em;
+
+  /* A11y */
+  --st4rt-focus-ring-color: rgba(216, 242, 19, 0.45);
+  --st4rt-focus-outline-color: #ffffff;
+  --st4rt-focus-outline-width: 2px;
+  --st4rt-focus-outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --st4rt-motion-duration-fast: 1ms;
+    --st4rt-motion-duration-base: 1ms;
+    --st4rt-motion-duration-slow: 1ms;
+    --st4rt-motion-translate-hover-y: 0px;
+  }
+}
+
+/* Opt-in helper: consume reduced-motion tokens when desired */
+.st4rt-reduced-motion-safe {
+  transition-duration: var(--st4rt-motion-duration-base);
+  transition-timing-function: var(--st4rt-motion-ease-standard);
+}

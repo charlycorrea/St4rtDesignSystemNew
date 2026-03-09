@@ -1,0 +1,117 @@
+.st4rt-btn {
+  --st4rt-btn-bg: transparent;
+  --st4rt-btn-color: var(--st4rt-color-text-primary, #F2F2F2);
+  --st4rt-btn-border-color: transparent;
+  --st4rt-btn-border-width: 1px;
+  --st4rt-btn-radius: 0;
+  --st4rt-btn-padding-y: 12px;
+  --st4rt-btn-padding-x: 22px;
+  --st4rt-btn-font-size: var(--st4rt-type-body-m-size, 16px);
+  --st4rt-btn-font-weight: 700;
+  --st4rt-btn-letter-spacing: 0;
+  --st4rt-btn-text-transform: none;
+
+  --st4rt-btn-bg-hover: var(--st4rt-btn-bg);
+  --st4rt-btn-color-hover: var(--st4rt-btn-color);
+  --st4rt-btn-border-color-hover: var(--st4rt-btn-border-color);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--st4rt-space-8, 8px);
+
+  padding: var(--st4rt-btn-padding-y) var(--st4rt-btn-padding-x);
+  border: var(--st4rt-btn-border-width) solid var(--st4rt-btn-border-color);
+  border-radius: var(--st4rt-btn-radius);
+
+  background: var(--st4rt-btn-bg);
+  color: var(--st4rt-btn-color);
+  text-decoration: none;
+  cursor: pointer;
+
+  font: inherit;
+  font-size: var(--st4rt-btn-font-size);
+  font-weight: var(--st4rt-btn-font-weight);
+  letter-spacing: var(--st4rt-btn-letter-spacing);
+  text-transform: var(--st4rt-btn-text-transform);
+
+  transition:
+    background-color var(--st4rt-motion-duration-fast, 150ms) var(--st4rt-motion-ease-standard, ease),
+    color var(--st4rt-motion-duration-fast, 150ms) var(--st4rt-motion-ease-standard, ease),
+    border-color var(--st4rt-motion-duration-fast, 150ms) var(--st4rt-motion-ease-standard, ease),
+    transform var(--st4rt-motion-duration-fast, 150ms) var(--st4rt-motion-ease-standard, ease);
+}
+
+.st4rt-btn:hover {
+  background: var(--st4rt-btn-bg-hover);
+  color: var(--st4rt-btn-color-hover);
+  border-color: var(--st4rt-btn-border-color-hover);
+  transform: translateY(var(--st4rt-motion-translate-hover-y, -1px));
+}
+
+.st4rt-btn:active {
+  transform: translateY(0);
+}
+
+.st4rt-btn:focus-visible {
+  outline: var(--st4rt-focus-outline-width, 2px) solid var(--st4rt-focus-outline-color, #ffffff);
+  outline-offset: var(--st4rt-focus-outline-offset, 2px);
+  box-shadow: 0 0 0 4px var(--st4rt-focus-ring-color, rgba(216, 242, 19, 0.45));
+}
+
+.st4rt-btn--primary {
+  --st4rt-btn-bg: var(--st4rt-color-accent-primary, #D8F213);
+  --st4rt-btn-color: var(--st4rt-color-bg, #0B0D10);
+  --st4rt-btn-border-color: var(--st4rt-color-accent-primary, #D8F213);
+  --st4rt-btn-bg-hover: color-mix(in srgb, var(--st4rt-color-accent-primary, #D8F213) 85%, #ffffff);
+  --st4rt-btn-color-hover: var(--st4rt-color-bg, #0B0D10);
+  --st4rt-btn-border-color-hover: color-mix(in srgb, var(--st4rt-color-accent-primary, #D8F213) 85%, #ffffff);
+}
+
+.st4rt-btn--secondary {
+  --st4rt-btn-bg: transparent;
+  --st4rt-btn-color: var(--st4rt-color-text-primary, #F2F2F2);
+  --st4rt-btn-border-color: var(--st4rt-color-text-primary, #F2F2F2);
+  --st4rt-btn-bg-hover: var(--st4rt-color-text-primary, #F2F2F2);
+  --st4rt-btn-color-hover: var(--st4rt-color-bg, #0B0D10);
+  --st4rt-btn-border-color-hover: var(--st4rt-color-text-primary, #F2F2F2);
+}
+
+.st4rt-btn--ghost {
+  --st4rt-btn-bg: transparent;
+  --st4rt-btn-color: var(--st4rt-color-text-primary, #F2F2F2);
+  --st4rt-btn-border-color: transparent;
+  --st4rt-btn-bg-hover: var(--st4rt-color-overlay-dark-35, rgba(0, 0, 0, 0.35));
+  --st4rt-btn-color-hover: var(--st4rt-color-text-primary, #F2F2F2);
+  --st4rt-btn-border-color-hover: transparent;
+}
+
+.st4rt-btn--sm {
+  --st4rt-btn-font-size: var(--st4rt-type-body-s-size, 14px);
+  --st4rt-btn-padding-y: 8px;
+  --st4rt-btn-padding-x: 16px;
+}
+
+.st4rt-btn--md {
+  --st4rt-btn-font-size: var(--st4rt-type-body-m-size, 16px);
+  --st4rt-btn-padding-y: 12px;
+  --st4rt-btn-padding-x: 22px;
+}
+
+.st4rt-btn--lg {
+  --st4rt-btn-font-size: var(--st4rt-type-display-m-size, 44px);
+  --st4rt-btn-padding-y: 16px;
+  --st4rt-btn-padding-x: 24px;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .st4rt-btn {
+    transition: none;
+  }
+
+  .st4rt-btn:hover,
+  .st4rt-btn:active {
+    transform: none;
+  }
+}
