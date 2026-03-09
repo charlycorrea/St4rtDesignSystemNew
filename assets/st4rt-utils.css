@@ -1,0 +1,63 @@
+.st4rt-container {
+  width: min(1200px, 100%);
+  margin-inline: auto;
+  padding-inline: var(--st4rt-space-16, 16px);
+}
+
+@media (min-width: 768px) {
+  .st4rt-container {
+    padding-inline: var(--st4rt-space-24, 24px);
+  }
+}
+
+.st4rt-full {
+  width: 100%;
+  max-width: none;
+}
+
+.st4rt-halign-left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.st4rt-halign-center {
+  text-align: center;
+  align-items: center;
+}
+
+.st4rt-halign-right {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.st4rt-valign-top {
+  justify-content: flex-start;
+}
+
+.st4rt-valign-center {
+  justify-content: center;
+}
+
+.st4rt-valign-bottom {
+  justify-content: flex-end;
+}
+
+.st4rt-richtext-reset p {
+  margin: 0;
+}
+
+.st4rt-richtext-reset p + p {
+  margin-top: var(--st4rt-space-12, 12px);
+}
+
+.st4rt-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

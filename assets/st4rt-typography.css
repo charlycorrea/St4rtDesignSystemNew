@@ -1,0 +1,35 @@
+.st4rt-type-display-l {
+  font-size: var(--st4rt-type-display-l-size, 56px);
+  font-weight: var(--st4rt-type-display-weight, 800);
+  line-height: var(--st4rt-type-display-lh-tight, 1.05);
+  letter-spacing: var(--st4rt-type-display-ls-tight, -0.02em);
+}
+
+.st4rt-type-display-m {
+  font-size: var(--st4rt-type-display-m-size, 44px);
+  font-weight: var(--st4rt-type-display-weight, 800);
+  line-height: var(--st4rt-type-display-lh-tight, 1.05);
+  letter-spacing: var(--st4rt-type-display-ls-tight, -0.02em);
+}
+
+.st4rt-type-body-m {
+  font-size: var(--st4rt-type-body-m-size, 16px);
+  font-weight: var(--st4rt-type-body-weight, 400);
+  line-height: var(--st4rt-type-body-lh-base, 1.45);
+  letter-spacing: var(--st4rt-type-body-ls, 0);
+}
+
+.st4rt-type-body-s {
+  font-size: var(--st4rt-type-body-s-size, 14px);
+  font-weight: var(--st4rt-type-body-weight, 400);
+  line-height: var(--st4rt-type-body-lh-base, 1.45);
+  letter-spacing: var(--st4rt-type-body-ls, 0);
+}
+
+.st4rt-type-kicker {
+  font-size: var(--st4rt-type-kicker-size, 12px);
+  font-weight: var(--st4rt-type-kicker-weight, 700);
+  line-height: var(--st4rt-type-kicker-lh, 1.2);
+  letter-spacing: var(--st4rt-type-kicker-ls, 0.12em);
+  text-transform: uppercase;
+}

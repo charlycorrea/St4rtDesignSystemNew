@@ -54,7 +54,7 @@
     --st4rt-inner-divider-w: {{ section.settings.inner_divider_width }}px;
   "
 >
-  <div class="st4rt-stats__wrap {% if section.settings.container_full %}is-full{% endif %}">
+  <div class="st4rt-container{% if section.settings.container_full %} st4rt-full{% endif %}">
     {% if section.settings.show_top_divider %}
       <div class="st4rt-stats__hsep is-top" aria-hidden="true"></div>
     {% endif %}
@@ -90,7 +90,7 @@
             {%- endif -%}
 
             {%- if block.settings.title != blank -%}
-              <{{ t_tag }} class="st4rt-stats__title">{{ block.settings.title }}</{{ t_tag }}>
+              <{{ t_tag }} class="st4rt-stats__title st4rt-type-display-m">{{ block.settings.title }}</{{ t_tag }}>
             {%- endif -%}
 
             {%- if block.settings.show_inner_divider -%}
@@ -98,11 +98,11 @@
             {%- endif -%}
 
             {%- if block.settings.subtitle != blank -%}
-              <{{ st_tag }} class="st4rt-stats__subtitle">{{ block.settings.subtitle }}</{{ st_tag }}>
+              <{{ st_tag }} class="st4rt-stats__subtitle st4rt-type-body-m">{{ block.settings.subtitle }}</{{ st_tag }}>
             {%- endif -%}
 
             {%- if block.settings.body != blank -%}
-              <{{ b_tag }} class="st4rt-stats__body">{{ block.settings.body }}</{{ b_tag }}>
+              <{{ b_tag }} class="st4rt-stats__body st4rt-type-body-s">{{ block.settings.body }}</{{ b_tag }}>
             {%- endif -%}
           </div>
         </div>
